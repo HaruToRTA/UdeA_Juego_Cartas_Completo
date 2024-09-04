@@ -1,0 +1,23 @@
+Trabajo del juego de cartas UdeA Punto 4 resuelto primer 20% tecnicas de programacion y laboratorio, para fray osorio
+
+Se probo que el programa encontrará varias escaleras de diferente pinta y tamaños, aunque es dificil 
+que salga una escalera por la baja probabilidad y la cantidad de cartas que son unicamente 10 
+(con una extension minima de por lo menos unas 3 cartas de igual pinta sin valores repetidos).
+
+Tambien se creó la funcion que calcula el puntaje de los jugadores, aunque por mi parte base el puntaje
+en aquellas cartas que no hacen parte de una escalera, es decir, si tenemos una escalera de 3 cartas estas 
+no cuentan como puntos, pero las cartas restantes si lo hacen (Tal vez no haya sido la solucion deseada).
+
+Dato: Si se desea ver con mayor claridad la funcion de escaleras en el apartado de jugador en TOTAL_CARTAS 
+aumentar su valor recomiendo usar 100 para una mejor visualizacion de la capacidad de la funcion. pero ello 
+llevará a un error en la funcion de buscar grupo, no encontrara los pares.
+
+Nota: El programa para hayar las escaleras presenta cierto error cuando hay un mismo valor repetido, es decir,
+digamos que tenemos dos 10 de picas pero tenemos 9 de picas y 8 de picas esto seria una escalera el problema 
+es que el programa no detecta ésta debido al doble valor del 10 y no supe como arreglarlo(Pudo ser una solucion 
+sencilla, pero por mi parte no la encontre).
+
+Tener en cuenta que los valores repetidos se deben al random usado para la generacion de las cartas
+aleatoriamente en el juego y no se delimito que solo apareciera una carta de cada tipo.
+
+Se uso chat GPT en un 40% (aproximacion) para ciertas funciones y el uso de ciertas librerias
