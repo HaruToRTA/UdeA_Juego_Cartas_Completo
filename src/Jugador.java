@@ -7,7 +7,7 @@ import javax.swing.JPanel;
 
 public class Jugador {
 
-    private final int TOTAL_CARTA = 100;
+    private final int TOTAL_CARTA = 10;
     private final int MARGEN = 20;
     private final int DISTANCIA = 48;
     private Carta[] cartas = new Carta[TOTAL_CARTA];
@@ -62,7 +62,7 @@ public class Jugador {
                 }
             }
 
-            if (cartasDePinta.size() >= 3) {
+            if (cartasDePinta.size() >= 2) {
                 Collections.sort(cartasDePinta, (a, b) -> a.getNombre().ordinal() - b.getNombre().ordinal());
 
                 List<Carta> escaleraActual = new ArrayList<>();
@@ -75,7 +75,7 @@ public class Jugador {
                     if (cartaActual.getNombre().ordinal() == cartaAnterior.getNombre().ordinal() + 1) {
                         escaleraActual.add(cartaActual);
                     } else {
-                        if (escaleraActual.size() >= 3) {
+                        if (escaleraActual.size() >= 2) {
                             escaleras.add(new ArrayList<>(escaleraActual));
                         }
                         escaleraActual.clear();
@@ -83,7 +83,7 @@ public class Jugador {
                     }
                 }
 
-                if (escaleraActual.size() >= 3) {
+                if (escaleraActual.size() >= 2) {
                     escaleras.add(escaleraActual);
                 }
             }
